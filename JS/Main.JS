@@ -33,3 +33,7 @@ window.addEventListener("scroll", function() {
     // Set initial active link when the page loads
     setActiveLink();
 });
+
+window.onload = function () {
+    document.body.classList.add("loaded")
+}
