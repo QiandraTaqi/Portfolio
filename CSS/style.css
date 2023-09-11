@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    padding: 15px 0 15px 0;
+    justify-content: space-between;
+    transition: background-color 1s ease-in-out; /* Efek transisi latar belakang */
+}
+
+.nav::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:  cover;
+    opacity: 0.5; /* Adjust the opacity to control the visibility of the background image */
+}
+
+
+.nav.scrolled {
+    background-color: rgb(1, 1, 60); /* Atur latar belakang saat di-scroll */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan saat di-scroll */
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin-right: 21px;
+  margin-left: 10px;
+  border-bottom: solid 2px transparent;
+  transition: color 0.7s ease, border-bottom 0.7s ease;
+}
+
+.menu-link:hover {
+  color: rgb(145, 202, 255);
+  border-bottom: solid 2px rgb(145, 202, 255);
+}
+
+.menu-link.active {
+  color: rgb(145, 202, 255);
+  border-bottom: solid 2px rgb(145, 202, 255);
+}
+
+.brand {
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    position: relative;
+    bottom: 30px;
+}
+
+.brand button:hover {
+  color: rgb(145, 202, 255);
+  transition: color 0.3s ease;
+}
+
+.brand button {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  top: 30px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  border: none;
+  background-color: transparent;
+}
+
+#Home {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://i.pinimg.com/originals/96/00/77/960077947ef0f1d35a52ab61cebeef36.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#Home .container {
+    position: absolute;
+    border: solid 3px;
+    border-color: gray;
+    background-color: gray;
+    padding: 15px;
+    letter-spacing: 10px;
+    top: 290px;
+    box-sizing: border-box;
+}
+
+#Jumbotron {
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgb(1, 1, 60);
+    padding-top: 6%;
+    padding-bottom: 5%;
+
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#Jumbotron h1 {
+    display: grid;
+    justify-content: center;
+    font-size: 36px;
+    margin-top: 4%;
+    color: white;
+}
+
+span {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    top: 30px;
+    letter-spacing: 3px;
+}
+
+.garis {
+    position: relative;
+    top: 10px;
+    left: 37%;
+    width: 13rem;
+    height: 2px;
+    border: 2px;
+    background-color: rgb(255, 255, 255);
+    bottom: 10px;
+}
+
+.Projects {
+    display: flex;
+    justify-content: space-evenly;   
+    margin: 10px;
+   
+}
+
+.judul {
+    display: grid;
+    margin-left: 46%;
+}
+
+.garis2 {
+    position: relative;
+    top: 10px;
+    right: 39px;
+    width: 13rem;
+    height: 2px;
+    border: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+  padding: 16px;
+  margin-top: 5%;
+  border: solid 1px;
+  border-color: rgb(197, 194, 194);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover {
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }     
+
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-top: 16px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+.garis3 {
+    position: relative;
+    top: 10px;
+    left: 38%;
+    width: 13rem;
+    height: 2px;
+    border: 2px;
+    background-color: rgb(255, 255, 255);
+    bottom: 10px;
+}
+
+.Contact {
+    margin-top: 10%;
+    background-color: rgb(1, 1, 60);
+    color: #ffffff;
+    padding: 5%;    
+}
+
+.Contact h1 {
+    display: grid;
+    margin-left: 43%;
+}
+
+.contact-form h2 {
+    color: rgb(1, 1, 60);
+    text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    padding-right: 5%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin: 10% auto 0 auto;
+  }
+
+  /* CSS untuk label */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  /* CSS untuk input dan textarea */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  /* CSS untuk tombol submit */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 40%;
+  }
+
+  .mycontact {
+    margin-left: 80%;
+    position: relative;
+  }
+  
+.our-contact svg {
+    margin-left: 46%;
+    margin-top: 8%;
+}
+
+.our-contact p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer .name {
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+
+  .socialmedia {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-right: 2%;
+    padding: 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    border-radius: 3px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(1, 1, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+    border-radius: 3px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+
+  
+  
+
+  
