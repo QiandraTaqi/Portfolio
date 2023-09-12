@@ -17,6 +17,7 @@
     padding: 15px 0 15px 0;
     justify-content: space-between;
     transition: background-color 1s ease-in-out; /* Efek transisi latar belakang */
+    z-index: 100;
 }
 
 .nav::before {
@@ -28,7 +29,6 @@
     background-size:  cover;
     opacity: 0.5; /* Adjust the opacity to control the visibility of the background image */
 }
-
 
 .nav.scrolled {
     background-color: rgb(1, 1, 60); /* Atur latar belakang saat di-scroll */

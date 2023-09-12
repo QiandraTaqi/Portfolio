@@ -38,3 +38,18 @@ window.onload = function () {
     document.body.classList.add("loaded")
 }
 
+// Navbar Click = Scroll
+document.querySelectorAll("nav a").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+  
+      // Ambil target elemen yang sesuai dengan ID dari atribut href
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+  
+      // Gulir ke elemen target dengan efek smooth
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
