@@ -1,0 +1,117 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 5%;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 100;
+}
+
+/* Background overlay transparan pada awal */
+.nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.nav.scrolled {
+    background-color: rgb(1, 1, 60);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.brand button {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.brand button:hover {
+    color: rgb(145, 202, 255);
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 0 10px;
+    padding-bottom: 2px;
+    border-bottom: solid 2px transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.menu-link:hover, .menu-link.active {
+    color: rgb(145, 202, 255);
+    border-bottom: solid 2px rgb(145, 202, 255);
+}
+
+#Jumbotron {
+    padding: 180px 20px 10%;
+    background-color: rgb(1, 1, 60);
+}
+
+/* Memperbaiki tag span kustom karena bootstrap me-reset style bawaan */
+.custom-span {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+.garis, .garis2, .garis3 {
+    width: 13rem;
+    height: 2px;
+    margin: 10px auto;
+}
+
+.garis { background-color: white; }
+.garis2 { background-color: black; }
+.garis3 { background-color: white; }
+
+/* Customisasi khusus untuk Card Project */
+.custom-card {
+    border-radius: 8px;
+    width: 320px;
+    max-width: 320px;
+    border: 1px solid rgb(197, 194, 194);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* Bagian Contact */
+.Contact {
+    background-color: rgb(1, 1, 60);
+    padding: 8% 20px 10%;
+}
+
+.custom-text-navy {
+    color: rgb(1, 1, 60);
+}
+
+.custom-contact-box {
+    max-width: 900px;
+}
+
+/* Helper untuk membuat garis pemisah di info kontak khusus desktop */
+@media screen and (min-width: 768px) {
+    .border-md-start {
+        border-left: 1px solid #ccc !important;
+    }
+}
